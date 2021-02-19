@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <!--A meta abaixo define o tamanho dos elementos em diferentes dispositivos, 
+        vale testar sem essa meta para ver como funciona-->
+    <meta name="viewport"
+        content="width=device-width, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="Icone_Pacto.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body class="cor-bg" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+
+        <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#ReferenciaID">
+            <!--"data-target" significa "Alvo Salvo", ou seja, faz referencia a ID abaixo-->
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <div class="collapse navbar-collapse" id="ReferenciaID">
+            <!--"ReferenciaID faz com que o JS funcione e esconda o conteúdo"-->
+            <ul id="fonte" class="navbar-nav">
+                <li class="nav-item mr-auto">
+                    <!--"mr-auto" significa Margen Right-->
+                    <a class="nav-link" href="portfolio.html">Início</a>
+                </li>
+                <li class="nav-item mr-auto">
+                    <a class="nav-link" href="portfolio.html#Sobre">Sobre mim</a>
+                </li>
+                <li class="nav-item mr-auto">
+                    <a class="nav-link" href="tel:+55081991680523">Contato</a>
+                </li>
+            </ul>
+        </div>
+
+        <a class="navbar-brand nome" href="portfolio.html#Sobre"><b>Myckael</b> Brenno</a>
+
+        <ul id="icones" class="navbar-nav ml-auto">
+            <!--"ml auto" significa direta-->
+            <li>
+                <a class="navbar-brand" href="https://www.linkedin.com/in/myckael-brenno-3836181b6/"
+                    target="_blank"><img src="resource/img/Linkedin.jpg" alt="Linkedin" class="icon1" /></a>
+            </li>
+            <li>
+                <a class="navbar-brand" href="mailto:myckaelbrennno@gmail.com"><img src="resource/img/Email.png"
+                        alt="Email" class="icon2" /></a>
+            </li>
+            <li>
+                <a class="navbar-brand" href="https://github.com/MyckaelBrenno" target="_blank"><img
+                        src="resource/img/GitHub.png" alt="GitHub" class="icon3" /></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                </br>
+                <h1>Carteira Estudantil Digital</h1>
+                <p style="color: gray;">Documentação de um projeto da faculdade, onde foram utilizados componentes de
+                    interface gráfica diretamente com a linguagem Java, assim como, bibliotecas que ajudaram no
+                    andamento do projeto: JDBC, Javax.mail.util, etc. </p>
+            </div>
+        </div>
+        </br>
+        <div class="row">
+            <div class="col-sm-12">
+                </br>
+                <h2>1. Introdução</h2>
+                </br>
+                <p class="TextoDoc">O presente documento tem, como principal finalidade, apresentar
+                    as
+                    funcionalidades do software elaborado por Myckael Brenno dos Santos, intitulado Carteira Estudantil
+                    Digital, bem como entrar em detalhes a respeito do funcionamento do protótipo funcional do referido
+                    programa. </p>
+                </br>
+
+                <h4 class="TextoDocH4">1.1 Contextualização do problema</h4>
+                <p class="TextoDoc">O presente documento tem, como principal finalidade, apresentar
+                    Considerando o cotidiano estudantil atual, torna-se inviável possuir uma carteira estudantil física,
+                    devido aos altos custos e à susceptibilidade de perda ou furto. Visando isso, foi desenvolvido o
+                    protótipo funcional da Carteira Estudantil Digital, que poderá ser usada no próprio celular do
+                    estudante, garantindo a facilidade de acesso. </p>
+                </br>
+
+                <h4 class="TextoDocH4">1.2 Objetivos</h4>
+                <p class="TextoDoc">O objetivo deste projeto é fornecer uma carteira estudantil
+                    digital para estudantes nativos do território nacional. </p>
+                </br>
+
+                <h4 class="TextoDocH4">1.3 Público alvo</h4>
+                <p class="TextoDoc">O público-alvo deste software é o corpo estudantil de escolas e universidades.</p>
+                </br>
+
+                <h2>2. Projeto </h2>
+                </br>
+                <h4 class="TextoDocH4">2.1 Requisitos do sistema</h4>
+                <p class="TextoDoc"><b>01 – Permitir o cadastro dos usuários:</b> possibilita que o estudante cadastre a
+                    si
+                    mesmo como um usuário no programa, utilizando e-mail, usuário e senha e, dessa forma, permitindo o
+                    login do estudante no sistema.</br>
+                    <b>02 – Geração da carteira estudantil digital:</b> permite que o estudante tenha livre acesso à sua
+                    carteira estudantil digital a partir da validação do login no sistema.</br>
+                    <b>03 – Envio da carteira por e-mail:</b> fornece os dados cadastrais da carteira estudantil
+                    específica do
+                    usuário pelo endereço de e-mail cadastrado na conta do estudante.
+                </p>
+                </br>
+
+                <h2>3. Telas do sistema</h2>
+                </br>
+                <img src="resource/img/cadastro.png" alt="Cadastro" />
+                </br>
+                </br>
+                <p class="TextoDoc">Esta é a tela do cadastro do estudante no sistema. O estudante digita seu e-mail,
+                    seu usuário desejado e a senha desejada para validar no sistema. Ao clicar na opção “Já possui um
+                    login?”, o usuário será encaminhado para a tela a seguir.</p>
+                </br>
+                </br>
+
+                <img src="resource/img/login.png" alt="Login" />
+                </br>
+                </br>
+                <p class="TextoDoc">A partir da validação do usuário e da senha na tela de login, o usuário poderá ter
+                    acesso ao conteúdo e à visualização da sua carteira de estudante. A próxima tela a ser aberta
+                    verifica as informações cadastradas e mostra a opção de mostrar a carteira do usuário. O login
+                    cadastrado foi o <b>admin</b> e a senha cadastrada para esse usuário foi <b>senha</b>.</p>
+                </br>
+                </br>
+
+                <img src="resource/img/Visualizar Carteira.png" alt="visualizar" />
+                </br>
+                </br>
+                <p class="TextoDoc">Nesta tela, o usuário poderá confirmar o envio da carteira de estudante digital
+                    solicitada para o e-mail cadastrado no sistema e também poderá visualizar a carteira de estudante.
+                    Na última opção, o usuário será encaminhado para a tela de visualização da carteira</p>
+                </br>
+                </br>
+
+                <img src="resource/img/carteira estudantil.PNG" alt="Carteira Estudantil" />
+                </br>
+                </br>
+                <p class="TextoDoc">Aqui, o sistema apresenta a carteira de estudante digital cadastrada específica para
+                    o usuário validado, contendo informações como nome do estudante, nome da faculdade, nome do curso,
+                    CPF, RG, data de nascimento e a validade.</p>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="container">
+        <div class="card border-light text-dark">
+            <div class="card-footer" style="color: gray;">Copyright © Myckael Brenno - 2021</div>
+        </div>
+    </div>
+</body>
+
+</html>

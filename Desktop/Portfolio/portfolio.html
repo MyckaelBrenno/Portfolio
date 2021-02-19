@@ -1,0 +1,187 @@
+<!doctype html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <!--A meta abaixo define o tamanho dos elementos em diferentes dispositivos, 
+        vale testar sem essa meta para ver como funciona-->
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body class="cor-bg">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+
+        <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#ReferenciaID">
+            <!--"data-target" significa "Alvo Salvo", ou seja, faz referencia a ID abaixo-->
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <div class="collapse navbar-collapse" id="ReferenciaID">
+            <!--"ReferenciaID faz com que o JS funcione e esconda o conteúdo"-->
+            <ul id="fonte" class="navbar-nav">
+                <li class="nav-item mr-auto">
+                    <!--"mr-auto" significa Margen Right-->
+                    <a class="nav-link" href="portfolio.html">Início</a>
+                </li>
+                <li class="nav-item mr-auto">
+                    <a class="nav-link" href="#Sobre">Sobre mim</a>
+                </li>
+                <li class="nav-item mr-auto">
+                    <a class="nav-link" href="tel:+55081991680523">Contato</a>
+                </li>
+            </ul>
+        </div>
+
+        <a class="navbar-brand nome" href="#Sobre"><b>Myckael</b> Brenno</a>
+        <!--O "#Sobre" está Referenciando para o "Id='Sobre'" ou seja, para uma parte da página (Sobre mim)-->
+
+        <ul id="icones" class="navbar-nav ml-auto">
+            <!--"ml auto" significa direta-->
+            <li>
+                <a class="navbar-brand" href="https://www.linkedin.com/in/myckael-brenno-3836181b6/"
+                    target="_blank"><img src="resource/img/Linkedin.jpg" alt="Linkedin" class="icon1" /></a>
+            </li>
+            <li>
+                <a class="navbar-brand" href="mailto:myckaelbrennno@gmail.com"><img src="resource/img/Email.png"
+                        alt="Email" class="icon2" /></a>
+            </li>
+            <li>
+                <a class="navbar-brand" href="https://github.com/MyckaelBrenno" target="_blank"><img
+                        src="resource/img/GitHub.png" alt="GitHub" class="icon3" /></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                </br>
+                <h1>Olá mundo, pode me chamar de Myckael!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p style="color: gray;">Um estudante que procura se beneficiar da arte da programação, </br> focando nos
+                    requisitos para o desenvolvimento FullStack.</p>
+            </div>
+        </div>
+        </br>
+        </br>
+        </br>
+
+        <div class="card-group">
+            <div class="card border-light bg-light text-dark" style="width:500px">
+                <!--border-light serve para tirar a borda-->
+                <img class="card-img-top mx-auto img-fluid" src="resource/img/SRD-MAC.png" alt="SRD-MAC"
+                    style="width: 80%">
+            </div>
+            <div class="card border-light bg-light text-dark" style="width:500px">
+                <img class="card-img-top mx-auto img-fluid" src="resource/img/SRD-celular.png" alt="SRD-Iphone"
+                    style="width: 60%;">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h4>UI Desktop</h4>
+                <p style="color: gray;">Desenvolvimento de FAQ para empresa Pacto Mais, abordamos um pouco do <b>CSS,
+                        bootstrap</b> e <b>JavaScript</b> em conjunto num design responsivo.</p>
+            </div>
+            <div class="col-lg-12">
+                <h4>UI Mobile</h4>
+                <p style="color: gray;">Foi trabalhado um pouco mais do <b>CSS</b> puro, portanto o design minimalista
+                    obtêm ainda mais
+                    performance</p>
+            </div>
+        </div>
+
+        <div class="card bg-dark text-dark"></div>
+        </br>
+        </br>
+
+        <div class="card-group appDesktop">
+            <div class="card border-light bg-light text-dark" style="width:500px">
+                <!--border-light serve para tirar a borda-->
+                <img class="card-img-top mx-auto img-fluid" src="resource/img/macbook fundo.png" alt="Macbook"
+                    style="width: 100%">
+            </div>
+            <div class="card border-light text-dark animaApp" style="width:500px">
+                <div class="card-body">
+                    <h4 class="card-title">Carteira Estudantil Digital</h4>
+                    <p class="card-text" style="color: gray;">Considerando o cotidiano estudantil atual, torna-se
+                        inviável possuir uma carteira estudantil física, devido aos altos custos e à susceptibilidade de
+                        perda ou furto. Visando isso, foi desenvolvido o protótipo funcional da Carteira Estudantil
+                        Digital, que poderá ser usada no próprio celular do estudante, garantindo a facilidade de acesso
+                    </p>
+                    <a href="CarteiraDigital.html" class="btn btn-secondary stretched-link">Ler mais</a>
+                </div>
+            </div>
+        </div>
+        </br>
+
+        <div class="card-group appDesktop">
+            <div class="card border-light text-dark animaApp" style="width:500px">
+                <div class="card-body">
+                    <h4 class="card-title">Dr Reparo</h4>
+                    <p class="card-text" style="color: gray;">Aplicação desktop criada com o intuito de atender demandas
+                        numa loja de materiais de construção. No desenvolvimento foi utilizada a linguagem
+                        <b>C-Sharp</b> no ambiente do Visual Studio. Essa aplicação surge devido as técnicas de
+                        aprendizagem adquiridas no
+                        curso de Técnico em Informática do SENAI, no qual sou formado.
+                    </p>
+                </div>
+            </div>
+            <div class="card border-light bg-light text-dark" style="width:500px">
+                <!--border-light serve para tirar a borda-->
+                <img class="card-img-top mx-auto rounded" src="resource/img/Dr Digital.png" alt="Macbook"
+                    style="width: 100%">
+            </div>
+        </div>
+        </br>
+        </br>
+
+        <div class="card bg-secondary text-white">
+            <div class="card-body">Para mais projetos, acesse o meu<a href="https://github.com/MyckaelBrenno"
+                    target="_blank" style="color: black; text-decoration: none;"><b> GitHub </b></a></div>
+        </div>
+        </br>
+        </br>
+
+        <div class="row">
+            <div class="col-lg-12 inicio">
+                <h1>Sobre mim</h1>
+                </br>
+            </div>
+        </div>
+
+        <div id="Sobre" class="container mt-3">
+            <div class="media border p-3">
+                <img src="resource/img/MB.jfif" alt="Myckael Brenno" class="mr-3 mt-3 rounded-circle"
+                    style="width:60px;">
+                <div class="media-body mx-auto">
+                    <h4>Myckael Brenno <small><i>Estudante de Ciência da Computação</i></small></h4>
+                    <p>Estudo na Faculdade Internacional da Paraíba (FPB), tenho 21 anos e tenho afinidade por
+                        tecnologia desde a conclusão do meu curso de Técnico em Informática - SENAI. Desde então procuro
+                        aperfeiçoar minhas técnicas de programação em diferentes linguagens. Tenho um grande foco em
+                        desenvolvimento FullStack, todo dia um desafio novo a se seguir</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card border-light text-dark">
+        <div class="card-footer" style="color: gray;">Copyright © Myckael Brenno - 2021</div>
+    </div>
+</body>
+
+</html>
